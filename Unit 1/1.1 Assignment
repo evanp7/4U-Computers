@@ -20,8 +20,8 @@ class Main {
     SeatNumber = input.nextInt();
 
 // Output section
-    System.out.print("Thank you for your purchase, here is your ticket");
-    System.out.print
+    System.out.Println("Thank you for your purchase, here is your ticket");
+    System.out.Println("");
 
 
 
