@@ -1,5 +1,31 @@
+import java.util.Scanner;
+
 class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    
+// Scanner & variables declare
+    Scanner input = new Scanner(System.in);
+    String FirLasName;
+    char SeatSection;
+    int SeatNumber;
+
+// Input section
+    System.out.println("Please enter your first and last name.");
+    FirLasName = input.nextLine();
+
+    System.out.println("Please enter the desired seat section from A, B, C or D");
+    SeatSection = input.next().charAt(0);
+
+    System.out.println("Please enter the desired seat number from 1-200");
+    SeatNumber = input.nextInt();
+
+// Output section try printf after
+    System.out.println("Thank you for your purchase, here is your ticket");
+    System.out.println("|----------------------------------------------|");
+    System.out.println("|Name: " + FirLasName + "                               |");
+    System.out.println("|Section: " + SeatSection + "                                    |");
+    System.out.println("|Seat: " + SeatNumber + "                                       |");
+    System.out.println("|Price: $83                                    |");
+    System.out.println("|----------------------------------------------|");
   }
 }
