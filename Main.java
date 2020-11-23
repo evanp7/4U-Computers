@@ -22,9 +22,9 @@ class Main {
 // Output section try printf after
     System.out.println("Thank you for your purchase, here is your ticket");
     System.out.println("|----------------------------------------------|");
-    System.out.println("|Name: " + FirLasName + "                               |");
-    System.out.println("|Section: " + SeatSection + "                                    |");
-    System.out.println("|Seat: " + SeatNumber + "                                       |");
+    System.out.printf("|Name: " + FirLasName + "'%40s' %n", "|");
+    System.out.printf("|Section: " + SeatSection + "'%40s' %n", "|");
+    System.out.printf("|Seat: " + SeatNumber + "'%40s' %n", "|");
     System.out.println("|Price: $83                                    |");
     System.out.println("|----------------------------------------------|");
   }
