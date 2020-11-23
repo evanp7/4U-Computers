@@ -19,11 +19,14 @@ class Main {
     System.out.Println("Please enter the desired seat number from 1-200");
     SeatNumber = input.nextInt();
 
-// Output section
+// Output section try printf after
     System.out.Println("Thank you for your purchase, here is your ticket");
-    System.out.Println("");
-
-
+    System.out.Println("|----------------------------------------------|");
+    System.out.Println("|Name: " + FirLasName + "                      |");
+    System.out.Println("|Section: " + SeatSection + "                  |");
+    System.out.Println("|Seat: " + SeatNumber + "                      |");
+    System.out.Println("|Price: $83");
+    System.out.Println("|----------------------------------------------|");
 
 
 
