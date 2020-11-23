@@ -1,0 +1,35 @@
+java.util.scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+// Scanner & variables declare
+    Scanner input = new Scanner(System.in);
+    String FirLasName;
+    char SeatSection;
+    int SeatNumber;
+
+// Input section
+    System.out.Println("Please enter your first and last name.");
+    FirLasName = input.nextLine();
+
+    System.out.Println("Please enter the desired seat section from A, B, C or D");
+    SeatSection = input.next().char.At(0);
+
+    System.out.Println("Please enter the desired seat number from 1-200");
+    SeatNumber = input.nextInt();
+
+// Output section
+    System.out.print("Thank you for your purchase, here is your ticket");
+    System.out.print
+
+
+
+
+
+
+
+
+
+  }
+}
