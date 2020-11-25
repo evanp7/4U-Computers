@@ -1,31 +1,33 @@
 import java.util.Scanner;
 
-class Main {
+class main {
   public static void main(String[] args) {
-    
-// Scanner & variables declare
+
+// Scanner 
     Scanner input = new Scanner(System.in);
-    String FirLasName;
-    char SeatSection;
-    int SeatNumber;
 
-// Input section
-    System.out.println("Please enter your first and last name.");
-    FirLasName = input.nextLine();
 
-    System.out.println("Please enter the desired seat section from A, B, C or D");
-    SeatSection = input.next().charAt(0);
+// Variables
+    String AniName;
+    int StartAmount;
+    int CurrYear = 2020;
+    int ProjYear;
+    int ProjPop;
 
-    System.out.println("Please enter the desired seat number from 1-200");
-    SeatNumber = input.nextInt();
+// Input screen
+    System.out.println("Please enter the type of animal");
+    AniName = input.nextLine();
 
-// Output section try printf after
-    System.out.println("Thank you for your purchase, here is your ticket");
-    System.out.println("|----------------------------------------------|");
-    System.out.println("|Name: " + FirLasName + "                               |");
-    System.out.println("|Section: " + SeatSection + "                                    |");
-    System.out.println("|Seat: " + SeatNumber + "                                       |");
-    System.out.println("|Price: $83                                    |");
-    System.out.println("|----------------------------------------------|");
+    System.out.println("Please enter the current number of" + AniName);
+    StartAmount = input.nextInt();
+
+    System.out.println("Please enter the projection year");
+    ProjYear = input.nextInt();
+
+// Output screen
+    System.out.println("Type of animal: " + AniName);
+
+
+
   }
 }

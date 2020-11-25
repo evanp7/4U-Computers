@@ -10,7 +10,7 @@ class main {
 // Variables
     String AniName;
     int StartAmount;
-    int CurrYear;
+    int CurrYear = 2020;
     int ProjYear;
     int ProjPop;
 
@@ -18,10 +18,14 @@ class main {
     System.out.println("Please enter the type of animal");
     AniName = input.nextLine();
 
-    System.out.Println("Please enter the number of" + AniName);
+    System.out.Println("Please enter the current number of" + AniName + ": ");
+    StartAmount = input.nextInt();
 
+    System.out.println("Please enter the projection year");
+    ProjYear = input.nextInt();
 
-
+// Output screen
+    System.out.println("Type of animal: " + AniName);
 
 
 
