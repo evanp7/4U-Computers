@@ -14,7 +14,7 @@ class Main {
     FirLasName = input.nextLine();
 
     System.out.println("Please enter the desired seat section from A, B, C or D");
-    SeatSection = input.next().charAt(0);
+    SeatSection = (input.nextLine()).charAt(0);
 
     System.out.println("Please enter the desired seat number from 1-200");
     SeatNumber = Integer.parseInt(input.nextLine());
