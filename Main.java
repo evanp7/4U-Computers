@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class main {
+class Main {
   public static void main(String[] args) {
 
 // Scanner 
@@ -13,21 +13,27 @@ class main {
     int CurrYear = 2020;
     int ProjYear;
     int ProjPop;
+    int NumofYear;
 
 // Input screen
     System.out.println("Please enter the type of animal");
     AniName = input.nextLine();
 
-    System.out.println("Please enter the current number of" + AniName);
+    System.out.println("Please enter the current number of " + AniName);
     StartAmount = input.nextInt();
 
     System.out.println("Please enter the projection year");
     ProjYear = input.nextInt();
 
+// Calculation
+    NumofYear = ProjYear -= CurrYear;
+    ProjPop = StartAmount *= NumofYear;
+
 // Output screen
-    System.out.println("Type of animal: " + AniName);
-
-
+    System.out.println("Type of animal: " + AniName );
+    System.out.println("Starting amount: " + StartAmount);
+    System.out.println("Projection year: " + ProjYear);
+    System.out.println("Projected population: " + ProjPop);
 
   }
 }

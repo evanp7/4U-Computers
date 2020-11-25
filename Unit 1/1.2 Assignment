@@ -24,9 +24,12 @@ class main {
     System.out.println("Please enter the projection year");
     ProjYear = input.nextInt();
 
+// Calculation
+    ProjYear = ProjYear -= CurrYear
+
 // Output screen
     System.out.println("Type of animal: " + AniName);
-
+    System.out.println(" ");
 
 
   }
