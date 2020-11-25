@@ -7,7 +7,12 @@ class Main {
     Scanner input = new Scanner(System.in);
 
 // Variables
+boolean = 
 
+// Question 1
+    System.out.println("This is a true or false question, please type true or false");
+    System.out.println("Tesla is expected to grow in 2020");
+    if
 
 
 
