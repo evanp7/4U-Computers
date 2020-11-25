@@ -20,10 +20,10 @@ class Main {
     AniName = input.nextLine();
 
     System.out.println("Please enter the current number of " + AniName);
-    StartAmount = input.nextInt();
+    StartAmount = Integer.parseInt(input.nextLine());
 
     System.out.println("Please enter the projection year");
-    ProjYear = input.nextInt();
+    ProjYear = Integer.parseInt(input.nextLine());
 
 // Calculation
     NumofYear = ProjYear - CurrYear;

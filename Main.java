@@ -6,34 +6,27 @@ class Main {
 // Scanner 
     Scanner input = new Scanner(System.in);
 
-
 // Variables
-    String AniName;
-    int StartAmount;
-    int CurrYear = 2020;
-    int ProjYear;
-    int ProjPop;
-    int NumofYear;
+    String ProNoun;
+    String Noun;
+    String Verb;
+    String Sentence;
 
-// Input screen
-    System.out.println("Please enter the type of animal");
-    AniName = input.nextLine();
+//Input Screen
+    System.out.println("Please enter a proper noun: ");
+    ProNoun = input.nextLine();
 
-    System.out.println("Please enter the current number of " + AniName);
-    StartAmount = Integer.parseInt(input.nextLine());
+    System.out.println("Please enter a noun: ");
+    Noun = input.nextLine();
 
-    System.out.println("Please enter the projection year");
-    ProjYear = input.nextInt();
+    System.out.println("Please enter a verb: ");
+    Verb = input.nextLine();
 
-// Calculation
-    NumofYear = ProjYear - CurrYear;
-    ProjPop = StartAmount*NumofYear+StartAmount;
+// Replace integers w/ strings *(treat 1, 2 & 3 as "text" instead of integers to use String.replaceAll)
+    Sentence = "1 was an interesting 2, but a unique 2. They could 3 better than any other 2. 3ing is 1’s favorite activity.";
 
-// Output screen
-    System.out.println("Type of animal: " + AniName );
-    System.out.println("Starting amount: " + StartAmount);
-    System.out.println("Projection year: " + ProjYear);
-    System.out.println("Projected population: " + ProjPop);
+    System.out.print(Sentence.replaceAll("1", ProNoun).replaceAll("2", Noun).replaceAll("3", Verb));
+
 
   }
 }

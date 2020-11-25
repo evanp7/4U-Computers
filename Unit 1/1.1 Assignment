@@ -17,7 +17,7 @@ class Main {
     SeatSection = input.next().charAt(0);
 
     System.out.println("Please enter the desired seat number from 1-200");
-    SeatNumber = input.nextInt();
+    SeatNumber = Integer.parseInt(input.nextLine());
 
 // Output section try printf after
     System.out.println("Thank you for your purchase, here is your ticket");
@@ -27,5 +27,7 @@ class Main {
     System.out.println("|Seat: " + SeatNumber + "                      |");
     System.out.println("|Price: $83                                    |");
     System.out.println("|----------------------------------------------|");
+
+    
   }
 }
