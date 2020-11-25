@@ -20,14 +20,14 @@ class Main {
     AniName = input.nextLine();
 
     System.out.println("Please enter the current number of " + AniName);
-    StartAmount = input.nextInt();
+    StartAmount = Integer.parseInt(input.nextLine());
 
     System.out.println("Please enter the projection year");
     ProjYear = input.nextInt();
 
 // Calculation
-    NumofYear = ProjYear -= CurrYear;
-    ProjPop = StartAmount *= NumofYear;
+    NumofYear = ProjYear - CurrYear;
+    ProjPop = StartAmount*NumofYear+StartAmount;
 
 // Output screen
     System.out.println("Type of animal: " + AniName );
